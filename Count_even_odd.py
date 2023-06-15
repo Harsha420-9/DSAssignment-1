@@ -7,15 +7,15 @@
 # Number of even numbers : 4
 
 # Number of odd numbers : 5
-low_Ran = int(input("lower range :"))
-hig_ran = int(input("upper range :"))
-count1 = 0
-count2 = 0
-for i in range(low_Ran,hig_ran+1):
-    if i %2 == 0:
-         count1 += 1
-print("Number of even numbers :" ,count1)
-for j in range(low_Ran,hig_ran+1):
-    if j %2 != 0:
-         count2 += 1
-print("Number of odd numbers :" ,count2)
+numbers_list = [int(num) for num in input("Enter a series of numbers : ").split()]
+even_count = 0
+odd_count = 0
+
+for num in numbers_list:
+    if num % 2 == 0:
+        even_count += 1
+    else:
+        odd_count += 1
+
+print("Even numbers:", even_count)
+print("Odd numbers:", odd_count)
