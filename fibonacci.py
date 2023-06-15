@@ -8,7 +8,7 @@
 
 sum = 0
 n1,n2 = 0,1
-num = 9
+num = 50
 for i in range(0,num):
     n1=n2
     n2=sum
